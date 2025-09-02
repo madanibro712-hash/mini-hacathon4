@@ -1,0 +1,82 @@
+ul>li>img{margin-left: 92px ;
+margin-top: 12px;
+}
+
+.div-1{margin-left: 630px; display: flex;
+    margin-top: 10px;
+    height: 70px;
+    z-index: 1;
+}
+
+.navbar-2b{position: absolute; left: 940px;}
+
+.navbar-a{position: fixed;
+background-color: yellow;
+width: 100%;
+z-index: 1;
+}
+
+.one-line{display: flex; list-style: none; gap: 18px; background-color: rgb(231, 231, 33); height: 45px; box-shadow: gray; justify-content: center;  margin-left: 200px; margin-right: 200px;}
+.one-line>li{font-weight: 700; margin-top: 5px;}
+
+.hello-1{display: flex; flex-wrap: wrap;}
+
+#sec1{display: flex; gap: 15px  ; }
+
+footer{height: 463px;
+background-color: rgb(241, 220, 30);
+}
+
+
+
+
+
+/* ===========================
+   ✅ Responsive Navbar + Images
+   =========================== */
+
+/* Tablet & below (≤ 991px) */
+@media (max-width: 991px) {
+  /* Navbar links ko center karna */
+  .navbar-nav {
+    text-align: center;
+  }
+  .navbar-nav .nav-item {
+    margin: 6px 0;
+  }
+}
+
+/* Mobile (≤ 768px) */
+@media (max-width: 768px) {
+  /* Navbar collapse hone par list full width */
+  .navbar-collapse {
+    background: #ffc107; /* navbar bg color */
+    padding: 10px 0;
+  }
+  .navbar-nav .nav-link {
+    display: block;
+    padding: 8px 0;
+  }
+
+  /* Image grid stack ho jaaye */
+  .row img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+}
+
+/* Extra small phones (≤ 576px) */
+@media (max-width: 576px) {
+  /* Navbar brand small */
+  .navbar-brand span {
+    font-size: 16px;
+  }
+
+  /* Images full width */
+  .row img {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
